@@ -1,0 +1,60 @@
+@import "./_variables.scss";
+
+@mixin border($size,$color) {
+    border:$size solid $color;
+}
+@mixin tableProperty($size,$color,$color1) {
+    table{
+        border-collapse: collapse;
+        width: $tableWidth;
+        thead{
+            background:$color1;
+            @include border($size,$color);
+        }
+        tbody>tr>td, thead>tr>th{
+            @include border($size,$color);
+            padding: $tableDivPadding;
+        }
+    }
+}
+
+@mixin textAlign($prop) {
+    text-align: $prop;
+}
+
+@mixin stdntOneColumnWidth {
+
+    table>tbody>tr>td{
+        div:nth-child(1){
+            width:$stdntOneColumnNameWidth;
+            display:inline-block;
+        }
+        div:nth-child(2){
+            width:$stdntOneColumnColonWidth;
+            display:inline-block;
+        }
+        div:nth-child(3){
+            width:$stdntOneColumnValueWidth;
+            display:inline-block;
+        }
+    }
+}
+
+
+@mixin stdntTwoColumnWidth {
+
+    table>tbody>tr>td{
+        div:nth-child(1){
+            width:$stdntTwoColumnNameWidth;
+            display:inline-block;
+        }
+        div:nth-child(2){
+            width:$stdntTwoColumnColonWidth;
+            display:inline-block;
+        }
+        div:nth-child(3){
+            width:$stdntTwoColumnValueWidth;
+            display:inline-block;
+        }
+    }
+}

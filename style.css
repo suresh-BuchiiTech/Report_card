@@ -1,0 +1,711 @@
+body {
+  width: 100%;
+}
+
+body .mainTable {
+  width: 100%;
+}
+
+body .mainTable .subTable {
+  width: 100%;
+}
+
+body .schlLogoTable {
+  width: 100%;
+}
+
+body .myTable > thead > tr > th, body .myTable > tbody > tr > td {
+  padding: 15px;
+}
+
+body .sideHeadForComponents {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+body td[class^="SCHOOL-LOGO-"] div {
+  width: 70%;
+  height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 16px auto;
+}
+
+body td[class^="SCHOOL-LOGO-"] div img {
+  width: 100%;
+  height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body td[class^="STUDENT-DETAILS-3-column-"] table > tbody > tr > td {
+  width: 33.33%;
+}
+
+body td[class^="STUDENT-DETAILS-3-column-"] table > tbody > tr > td div:nth-child(1) {
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-3-column-"] table > tbody > tr > td div:nth-child(2) {
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-3-column-"] table > tbody > tr > td div:nth-child(3) {
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-3-column-"] .studentDetailsTable3Column {
+  width: 100%;
+}
+
+body td[class^="STUDENT-DETAILS-1-column-"] table > tbody > tr > td {
+  width: 100%;
+}
+
+body td[class^="STUDENT-DETAILS-1-column-"] .studentDetailsTable1Column {
+  width: 100%;
+}
+
+body td[class^="STUDENT-DETAILS-1-column-"] table > tbody > tr > td div:nth-child(1) {
+  width: 40%;
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-1-column-"] table > tbody > tr > td div:nth-child(2) {
+  width: 2%;
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-1-column-"] table > tbody > tr > td div:nth-child(3) {
+  width: 55%;
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-2-column-"] table > tbody > tr > td {
+  width: 50%;
+}
+
+body td[class^="STUDENT-DETAILS-2-column-"] .studentDetailsTable2Column {
+  width: 100%;
+}
+
+body td[class^="STUDENT-DETAILS-2-column-"] table > tbody > tr > td div:nth-child(1) {
+  width: 40%;
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-2-column-"] table > tbody > tr > td div:nth-child(2) {
+  width: 2%;
+  display: inline-block;
+}
+
+body td[class^="STUDENT-DETAILS-2-column-"] table > tbody > tr > td div:nth-child(3) {
+  width: 55%;
+  display: inline-block;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable thead {
+  font-family: serif;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable tbody {
+  font-family: Times New Roman;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable thead > tr > th, body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable tbody > tr > td {
+  border: 2px solid #444444;
+  padding: 5px;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable thead > tr > td {
+  padding: 5px;
+  background: #F29D4B;
+  opacity: 0.8;
+  border: 2px solid #444444;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable .termAttendanceColumn2 {
+  text-align: -webkit-center;
+  width: 10%;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable .termAttendanceColumn3 {
+  text-align: -webkit-center;
+  width: 10%;
+}
+
+body td[class^="TERM-ATTENDANCE-"] .termAttendanceMainTable .termAttendanceColumn1 {
+  text-align: -webkit-initial;
+  width: 80%;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable {
+  width: 100%;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable thead {
+  font-family: serif;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody {
+  font-family: Times New Roman;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr > td, body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr > th {
+  border: 2px solid #b2cecf;
+  padding: 5px;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable thead > tr > th, body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr > th {
+  border: 2px solid #b2cecf;
+  background: #9BA747;
+  opacity: 0.8;
+  padding: 5px;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable thead > tr th:nth-child(1) {
+  -webkit-column-width: 20px;
+          column-width: 20px;
+  text-align: initial;
+  font-size: 14px;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable thead > tr th:nth-child(n+2):nth-child(-n+9) {
+  -webkit-column-width: 20px;
+          column-width: 20px;
+  text-align: initial;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr th:nth-child(1) {
+  -webkit-column-width: 20px;
+          column-width: 20px;
+  text-align: initial;
+  font-size: 14px;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr td:nth-child(1) {
+  -webkit-column-width: 20px;
+          column-width: 20px;
+  text-align: initial;
+  font-size: 14px;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr td:nth-child(n+2):nth-child(-n+9) {
+  -webkit-column-width: 20px;
+          column-width: 20px;
+  text-align: initial;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+body td[class^="MONTHLY-ATTENDANCE-"] .monthAttendanceMainTable .monthAttendanceSubTable tbody > tr th:nth-child(n+2):nth-child(-n+9) {
+  -webkit-column-width: 20px;
+          column-width: 20px;
+  text-align: initial;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] thead {
+  color: #253F5B;
+  font-family: Times New Roman;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] tbody {
+  font-family: sans-serif;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] table thead {
+  background: #5C868D;
+  border: 2px solid #6A8A82;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] table tbody > tr > td, body td[class^="SCHOLASTIC-MARKS-"] table thead > tr > th {
+  border: 2px solid #6A8A82;
+  padding: 14px;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] tbody > tr td:nth-child(1) {
+  text-align: initial;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] tbody > tr td:nth-child(2) {
+  text-align: center;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] tbody > tr td:nth-child(3) {
+  text-align: center;
+}
+
+body td[class^="SCHOLASTIC-MARKS-"] tbody > tr td:nth-child(3) div {
+  text-align: center;
+  background: #5C868D;
+  max-width: 20%;
+  margin-left: 40%;
+}
+
+body td[class^="SEMESTER-GRAPH-"] {
+  padding-top: 20px;
+}
+
+body td[class^="SEMESTER-GRAPH-"] .semesterGraph {
+  border: 2px solid #444444;
+  width: 98%;
+}
+
+body td[class^="SEMESTER-GRAPH-"] .semesterGraph svg {
+  width: 85%;
+  height: 400px;
+}
+
+body td[class^="SEMESTER-GRAPH-"] .semesterGraph .term1 {
+  fill: #81A3A7;
+  opacity: 0.8;
+}
+
+body td[class^="SEMESTER-GRAPH-"] .semesterGraph .term2 {
+  fill: #54678F;
+  opacity: 0.8;
+}
+
+body td[class^="SEMESTER-GRAPH-"] .semesterGraph text {
+  font-size: 16px;
+}
+
+body td[class^="ASSESSMENT-GRAPH-"] {
+  padding-top: 20px;
+}
+
+body td[class^="ASSESSMENT-GRAPH-"] .assessmentGraph {
+  border: 2px solid #444444;
+  width: 98%;
+}
+
+body td[class^="ASSESSMENT-GRAPH-"] .assessmentGraph svg {
+  width: 85%;
+  height: 400px;
+}
+
+body td[class^="ASSESSMENT-GRAPH-"] .assessmentGraph .year {
+  fill: #5c4a72;
+  opacity: 0.8;
+}
+
+body td[class^="ASSESSMENT-GRAPH-"] .assessmentGraph text {
+  font-size: 16px;
+}
+
+body td[class^="OVERALL-TOTAL-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="OVERALL-TOTAL-"] tbody {
+  font-family: sans-serif;
+}
+
+body td[class^="OVERALL-TOTAL-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="OVERALL-TOTAL-"] table thead {
+  background: #9e9d9d;
+  border: 2px solid #444444;
+}
+
+body td[class^="OVERALL-TOTAL-"] table tbody > tr > td, body td[class^="OVERALL-TOTAL-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="OVERALL-TOTAL-"] table {
+  width: 98%;
+}
+
+body td[class^="OVERALL-TOTAL-"] table tbody > tr td:nth-child(1) {
+  width: 80%;
+}
+
+body td[class^="OVERALL-TOTAL-"] table tbody > tr td:nth-child(2) {
+  width: 10%;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] tbody {
+  font-family: sans-serif;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable {
+  width: 100%;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable table thead {
+  background: #5C868D;
+  border: 2px solid #6A8A82;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable table tbody > tr > td, body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable table thead > tr > th {
+  border: 2px solid #6A8A82;
+  padding: 14px;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable tbody > tr > td {
+  text-align: center;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingMainTable tbody > tr > td .schlGradingSubTable {
+  width: 50%;
+  margin-left: 250px;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingSubTable {
+  border: 2px solid #6A8A82;
+  border-collapse: collapse;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingSubTable thead {
+  background: #5C868D;
+  opacity: 0.8;
+  border: 2px solid #6A8A82;
+}
+
+body td[class^="SCHOLASTIC-GRADING-"] .schlGradingSubTable tbody > tr > td, body td[class^="SCHOLASTIC-GRADING-"] .schlGradingSubTable thead > tr > th {
+  border: 2px solid #6A8A82;
+  padding: 5px;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] {
+  width: 96%;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] tbody {
+  font-family: sans-serif;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table > thead > tr th:nth-child(1) {
+  width: 90%;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table > thead > tr th:nth-child(2) {
+  text-align: center;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table > tbody > tr td:nth-child(1) {
+  width: 90%;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table > tbody > tr td:nth-child(2) {
+  text-align: center;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table thead {
+  background: #9e9d9d;
+  border: 2px solid #444444;
+}
+
+body td[class^="COSCHOLASTIC-MARKS-"] table tbody > tr > td, body td[class^="COSCHOLASTIC-MARKS-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] tbody {
+  font-family: serif;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] table thead {
+  background: #9e9d9d;
+  border: 2px solid #444444;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] table tbody > tr > td, body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] .coschlInMarksTable {
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] .coschlInMarksTable tbody > tr td:nth-child(1) {
+  width: 90%;
+  height: 20px;
+}
+
+body td[class^="COSCHOLASTIC-INDICATOR-MARKS-"] .coschlInMarksTable tbody > tr td:nth-child(2) {
+  width: 10%;
+  text-align: center;
+  height: 20px;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] tbody {
+  font-family: sans-serif;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable tbody > tr > td {
+  text-align: center;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable tbody > tr > td table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable tbody > tr > td table thead {
+  background: #9e9d9d;
+  border: 2px solid #444444;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable tbody > tr > td table tbody > tr > td, body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable tbody > tr > td table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="COSCHOLASTIC-GRADING-"] .coschlGradingMainTable tbody > tr > td .coschlGradingSubTable {
+  width: 50%;
+  margin-left: 250px;
+  border-collapse: collapse;
+}
+
+body td[class^="PARTCIPATIONS-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="PARTCIPATIONS-"] tbody {
+  font-family: serif;
+}
+
+body td[class^="PARTCIPATIONS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="PARTCIPATIONS-"] table thead {
+  background: #EDD170;
+  border: 2px solid #444444;
+}
+
+body td[class^="PARTCIPATIONS-"] table tbody > tr > td, body td[class^="PARTCIPATIONS-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="PARTCIPATIONS-"] .participationMainTable {
+  width: 98%;
+}
+
+body td[class^="ACHIEVEMENTS-"] thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="ACHIEVEMENTS-"] tbody {
+  font-family: serif;
+}
+
+body td[class^="ACHIEVEMENTS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="ACHIEVEMENTS-"] table thead {
+  background: #A7414A;
+  border: 2px solid #444444;
+}
+
+body td[class^="ACHIEVEMENTS-"] table tbody > tr > td, body td[class^="ACHIEVEMENTS-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="ACHIEVEMENTS-"] .achievementMainTable {
+  width: 98%;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable {
+  width: 98%;
+  border-collapse: collapse;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable table thead {
+  background: #F29D4B;
+  border: 2px solid #444444;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable table tbody > tr > td, body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable .participationAndAchievementSubTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable .participationAndAchievementSubTable thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="PARTCIPATIONS&ACHIEVEMENTS-"] .participationAndAchievementMainTable .participationAndAchievementSubTable tbody {
+  font-family: serif;
+}
+
+body td[class^="HEALTH-DETAILS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="HEALTH-DETAILS-"] table thead {
+  background: #80ADD7;
+  border: 2px solid #444444;
+}
+
+body td[class^="HEALTH-DETAILS-"] table tbody > tr > td, body td[class^="HEALTH-DETAILS-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="HEALTH-DETAILS-"] .healthTable {
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+body td[class^="HEALTH-DETAILS-"] .healthTable thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="HEALTH-DETAILS-"] .healthTable tbody {
+  font-family: serif;
+}
+
+body td[class^="HEALTH-DETAILS-"] table > thead > tr th:nth-child(1) {
+  width: 80%;
+  text-align: initial;
+}
+
+body td[class^="HEALTH-DETAILS-"] table > thead > tr th:nth-child(2) {
+  width: 10%;
+  text-align: -webkit-center;
+}
+
+body td[class^="HEALTH-DETAILS-"] table > thead > tr th:nth-child(3) {
+  width: 10%;
+  text-align: -webkit-center;
+}
+
+body td[class^="HEALTH-DETAILS-"] table > tbody > tr td:nth-child(1) {
+  width: 80%;
+  text-align: initial;
+}
+
+body td[class^="HEALTH-DETAILS-"] table > tbody > tr td:nth-child(2) {
+  width: 10%;
+  text-align: -webkit-center;
+}
+
+body td[class^="HEALTH-DETAILS-"] table > tbody > tr td:nth-child(3) {
+  width: 10%;
+  text-align: -webkit-center;
+}
+
+body td[class^="REMARKS-"] table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+body td[class^="REMARKS-"] table thead {
+  background: #9BA747;
+  border: 2px solid #444444;
+}
+
+body td[class^="REMARKS-"] table tbody > tr > td, body td[class^="REMARKS-"] table thead > tr > th {
+  border: 2px solid #444444;
+  padding: 14px;
+}
+
+body td[class^="REMARKS-"] table {
+  width: 98%;
+  border-collapse: collapse;
+}
+
+body td[class^="REMARKS-"] table thead {
+  font-family: Times New Roman;
+}
+
+body td[class^="REMARKS-"] table tbody {
+  font-family: serif;
+}
+
+body td[class^="REMARKS-"] table tbody > tr .remarksTableColumn1 {
+  width: 10%;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #444444;
+}
+
+body td[class^="REMARKS-"] table tbody > tr .remarksTableColumn2 {
+  font-size: 18px;
+  border: 2px solid #444444;
+}
+
+body td[class^="SIGNATURE-"] table {
+  width: 100%;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */

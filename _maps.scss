@@ -1,0 +1,55 @@
+$fontStyle: (
+    "timesNewRoman": Times New Roman,
+    "sansSerif": sans-serif,
+    "cursive":cursive,
+    "fantasy":fantasy,
+    "serif":serif
+);
+
+$colorPalette: (
+    blue: (
+        base:#3498db,
+        light:#5C868D,
+        lighter: #6A8A82
+    ),
+    yellow: (
+        base:   #CB8C1D,
+        light:  #EDD170,
+        ligher: #F2EFE4
+    ),
+    orange:(
+        base:#f3561d,
+        light:#F29D4B,
+        lighter:#f3b097
+    ),
+    cyan:(
+        base:#80ADD7,
+        light:#47eeeeee,
+        lighter:#4C3327
+    ),
+    red:(
+        base: #ff0000,
+        light:#A7414A,
+        lighter:#f79797
+    ),
+    green:(
+        base:green,
+        light:#9BA747,
+        lighter:#b2cecf
+    ),
+    grey:(
+        base:#253F5B,
+        light:#9e9d9d,
+        lighter:#b6b5b3
+    ),
+    black:(
+        base:black,
+        light:#1f1e1e,
+        lighter:#444444
+    ),
+    graph:(
+        base:#81A3A7,
+        light:#5c4a72,
+        lighter:#54678F
+    )
+);

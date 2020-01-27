@@ -1,0 +1,505 @@
+@import "./utilities/_variables.scss";
+@import "./utilities/_methods.scss";
+
+body{
+    width: $fullWidth;
+    
+    .mainTable{
+        width: $fullWidth;
+        .subTable{
+            width: $fullWidth;
+        }
+    }               
+    .schlLogoTable{
+        width:$fullWidth;
+    }
+    .myTable>thead>tr>th, .myTable>tbody>tr>td{
+        padding:$paddingBtwnComponents;
+    }
+    .sideHeadForComponents{
+        padding-bottom:$normalPadding;
+        padding-top:$normalPadding;
+    }
+
+    td[class^="SCHOOL-LOGO-"]{
+        div{
+            width:$schoolLogoComponentWidth;
+            height:$schoolLogoComponentHeight;
+            object-fit: contain;
+            margin:16px auto;
+            img{
+                width:$schoolLogoImgWidth;
+                height:$schoolLogoImgHeight; 
+                object-fit: contain;
+            }
+        }
+    }
+
+    td[class^="STUDENT-DETAILS-3-column-"]{
+        table>tbody>tr>td{
+            width:$threeColumnTableWidth;
+            
+            div:nth-child(1){
+                display:inline-block;
+            }
+            div:nth-child(2){
+                display:inline-block;
+            }
+            div:nth-child(3){
+                display:inline-block;
+            }
+        }
+        .studentDetailsTable3Column{
+            width: $fullWidth;
+        }
+    }
+    
+    td[class^="STUDENT-DETAILS-1-column-"]{
+        table>tbody>tr>td{
+            width:$oneColumnTableWidth;
+        }
+        .studentDetailsTable1Column {
+            width:$fullWidth;
+        }
+        @include stdntOneColumnWidth(); 
+    }
+    
+    td[class^="STUDENT-DETAILS-2-column-"]{
+        table>tbody>tr>td{
+            width:$twoColumnTableWidth;
+        }
+        .studentDetailsTable2Column{
+            width: $fullWidth;
+        }
+
+        @include stdntTwoColumnWidth();   
+    }
+
+    td[class^="TERM-ATTENDANCE-"]{
+        .termAttendanceMainTable{            
+            thead{
+                font-family:  $termAttndceTableHeadFontFamily;
+            }
+            tbody{
+                font-family:  $termAttndceTableBodyFontFamily;
+            }
+            border-collapse: collapse;
+            width:$termAttndceComponentWidth;
+            thead>tr>th, tbody>tr>td{
+                @include border(2px,$termAttndceTableBorderColor);
+                padding:$minPadding;
+            }
+            thead>tr>td{
+                padding:$minPadding;
+                background:$termAttndceTableHeadColor;
+                opacity: 0.8;
+                @include border(2px,$termAttndceTableBorderColor);
+            }
+            .termAttendanceColumn2{
+                text-align:-webkit-center;
+                width:10%;
+            }
+            .termAttendanceColumn3{
+                text-align:-webkit-center;
+                width:10%;
+            }
+            .termAttendanceColumn1{
+                text-align:-webkit-initial;
+                width:80%;
+            }
+        }   
+    }
+
+    td[class^="MONTHLY-ATTENDANCE-"]{
+        .monthAttendanceMainTable{
+            width:$fullWidth;
+        .monthAttendanceSubTable{
+            thead{
+                font-family:  $monthAttdnceTableHeadFontFamily;
+            }
+            tbody{
+                font-family:  $monthAttdnceTableBodyFontFamily;
+            }
+            border-collapse: collapse;
+            width: $tableWidth;
+            tbody>tr>td, tbody>tr>th{
+                @include border(2px,$monthAttdnceTableBorderColor);
+                padding:$minPadding;
+            }
+            thead>tr>th, tbody>tr>th{
+                @include border(2px,$monthAttdnceTableBorderColor);
+                background:$monthAttdnceTableHeadColor;
+                opacity: 0.8;
+                padding:$minPadding;
+            }
+            thead>tr{
+                th:nth-child(1){
+                    column-width:20px;
+                    text-align:initial;
+                    font-size:$smallFont;    
+                }
+                th:nth-child(n+2):nth-child(-n+9){
+                    column-width:20px;
+                    text-align:initial;
+                    font-size:$smallFont;
+                    text-transform: uppercase;
+                }                
+            }
+            tbody>tr{
+                th:nth-child(1){
+                    column-width:20px;
+                    text-align:initial;
+                    font-size:$smallFont;
+                }
+
+                td:nth-child(1){
+                    column-width:20px;
+                    text-align:initial;
+                    font-size:$smallFont;
+                }
+                td:nth-child(n+2):nth-child(-n+9){
+                    column-width:20px;
+                    text-align:initial;
+                    font-size:$smallFont;
+                    
+                    text-transform: uppercase;
+                }
+
+                th:nth-child(n+2):nth-child(-n+9){
+                    column-width:20px;
+                    text-align:initial;
+                    font-size:$smallFont;
+                    
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    }
+
+    td[class^="SCHOLASTIC-MARKS-"]{
+        thead{
+            color:$schTableHeadFontColor;
+            font-family:  $schlTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $schlTableBodyFontFamily;
+        }
+        @include tableProperty(2px,$schlTableBorderColor,$schlTableHeaderColor);
+
+        tbody>tr{
+            td:nth-child(1){
+                @include textAlign(initial);
+            }
+            td:nth-child(2){
+                @include textAlign(center);
+            }
+            td:nth-child(3){
+                div{
+                    @include textAlign(center);
+                    background: $schlTableHeaderColor;
+                    max-width:20%;
+                    margin-left: 40%;
+                }
+                @include textAlign(center);
+            }
+        }
+    }
+
+    td[class^="SEMESTER-GRAPH-"]{
+        padding-top: $maxPadding;
+        .semesterGraph{
+            @include border(2px,$semestrGraphBorderColor);
+            width: $graphComponentWidth;
+            
+            svg{
+                width:$graphWidth;
+                height:$semesterGraphComponentHeight;
+            }
+            .term1{
+                fill:$semestrTerm1Color;
+                opacity: 0.8;
+            }
+            .term2{
+                fill:$semestrTerm2Color;
+                opacity: 0.8;
+            }
+            text{
+                font-size: $normalFont;
+            }
+        }
+    }
+
+    td[class^="ASSESSMENT-GRAPH-"]{
+        padding-top: 20px;
+        .assessmentGraph{
+            @include border(2px,$asesmntGraphBorderColor);
+            width: $graphComponentWidth;
+            
+            svg{
+                width:$graphWidth;
+                height:$assessmentGraphComponentHeight;
+            }
+            .year{
+                fill:$asesmntYear1Color;
+                opacity: 0.8;
+            }
+            text{
+                font-size:$normalFont;
+            }
+        }
+    }
+
+    td[class^="OVERALL-TOTAL-"]{
+        thead{
+            font-family:  $ovrallTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $ovrallTableBodyFontFamily;
+        }
+        @include tableProperty(2px,$ovrallTableBorderColor,$ovrallTableHeaderColor);
+        table{
+            width:$tableWidth;
+            tbody>tr{
+                td:nth-child(1){
+                    width:$ovrallHeadWidth;
+                }
+                td:nth-child(2){
+                    width:$ovrallBodyWidth;
+                }
+            }
+        }
+    }
+
+    td[class^="SCHOLASTIC-GRADING-"]{
+        thead{
+            font-family:  $schlTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $schlTableBodyFontFamily;
+        }
+        .schlGradingMainTable{
+            @include tableProperty(2px,$schlTableBorderColor,$schlTableHeaderColor);
+            width: $fullWidth;
+            tbody>tr>td{
+                text-align:center;
+                .schlGradingSubTable{
+                    width:$halfWidth;
+                    margin-left:250px;
+                }
+            }
+        }  
+        .schlGradingSubTable{
+            @include border(2px,$schlTableBorderColor);
+            border-collapse: collapse;
+            thead{
+                background:$schlTableHeaderColor;
+                opacity: 0.8;
+                @include border(2px,$schlTableBorderColor);
+            }
+            tbody>tr>td, thead>tr>th{
+                @include border(2px,$schlTableBorderColor);
+                padding: $minPadding;
+            }
+        }
+    }
+
+    td[class^="COSCHOLASTIC-MARKS-"]{
+        thead{
+            font-family:  $coschlTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $coschlTableBodyFontFamily;
+        }
+        width:96%;
+        table>thead>tr{
+            th:nth-child(1){
+                width: 90%;
+
+            }
+            th:nth-child(2){
+                @include textAlign(center);
+            }
+        }
+        table>tbody>tr{
+            td:nth-child(1){
+                width: 90%;
+            }
+            td:nth-child(2){
+                @include textAlign(center);
+            }
+        }
+        @include tableProperty(2px,$coshlInTableBorderColor,$coschlTableHeaderColor);
+    }
+
+    td[class^="COSCHOLASTIC-INDICATOR-MARKS-"]{
+        thead{
+            font-family:  $coshlInTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $coshlInTableBodyFontFamily;
+        }
+        @include tableProperty(2px,$coshlInTableBorderColor,$coschlTableHeaderColor);
+        .coschlInMarksTable{
+            width:$tableWidth;       
+            margin-bottom:20px;   
+            tbody>tr{
+                td:nth-child(1){
+                    width:$coschlInHeadWidth;
+                    height:$schlIndicatorComponentHeight;
+                }
+                td:nth-child(2){
+                    width:$coschlInBodyWidth;
+                    text-align:center;
+                    height:$schlIndicatorComponentHeight;
+                }
+            }
+        }
+    }
+
+    td[class^="COSCHOLASTIC-GRADING-"]{
+        thead{
+            font-family:  $coschlTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $coschlTableBodyFontFamily;
+        }
+        .coschlGradingMainTable{
+            width:$fullWidth;
+            border-collapse:collapse;
+            tbody>tr>td{
+                text-align:center;
+                @include tableProperty(2px,$participationTableBorderColor,$coschlTableHeaderColor);         
+                .coschlGradingSubTable{
+                    width:$coschlGrdngTableWidth;
+                    margin-left:250px;
+                    border-collapse:collapse;
+                }
+            }
+        }
+    }
+
+    td[class^="PARTCIPATIONS-"]{
+        thead{
+            font-family:  $participationTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $participationTableBodyFontFamily;
+        }
+        @include tableProperty(2px,$participationTableBorderColor,$participationTableHeadColor);
+        .participationMainTable{
+            width: $partcptnTableWidth;
+            
+        }
+    }
+
+    td[class^="ACHIEVEMENTS-"]{
+        thead{
+            font-family:  $achieveTableHeadFontFamily;
+        }
+        tbody{
+            font-family:  $achieveTableBodyFontFamily;
+        }
+        @include tableProperty(2px,$achieveTableBorderColor,$achieveTableHeadColor);
+        .achievementMainTable{
+            width: $achvmntTableWidth;
+            
+        }
+    }
+
+    td[class^="PARTCIPATIONS&ACHIEVEMENTS-"]{
+        .participationAndAchievementMainTable{
+            
+            width:$tableWidth;
+            border-collapse:collapse;
+            @include tableProperty(2px,$achievemntAndParticipatnTableBorderColor,$achievemntAndParticipatnTableHeadColor);
+                .participationAndAchievementSubTable{
+                    thead{
+                        font-family:  $achievemntAndParticipatnTableHeadFontFamily;
+                    }
+                    tbody{
+                        font-family:  $achievemntAndParticipatnTableBodyFontFamily;
+                    }
+                    width:$achievemntAndParticipatnTableWidth;
+                    border-collapse:collapse;
+                }
+        }
+    }
+
+    td[class^="HEALTH-DETAILS-"]{
+        @include tableProperty(2px,$healthTableBorderColor,$healthTableHeadColor);
+        .healthTable{
+            thead{
+                font-family:  $healthTableHeadFontFamily;
+            }
+            tbody{
+                font-family:  $healthTableBodyFontFamily;
+            }
+            width:$healthTableWidth;
+            margin-bottom:20px;
+            
+        }
+        table>thead>tr{
+            th:nth-child(1){
+                width:$healthTableColumn1Width;
+                text-align: initial;
+            }
+            th:nth-child(2){
+                width:$healthTableColumn2Width;
+                text-align:-webkit-center;
+            }
+            th:nth-child(3){
+                width:$healthTableColumn3Width;
+                text-align:-webkit-center;
+            }
+        }
+        table>tbody>tr{
+            td:nth-child(1){
+                width:$healthTableColumn1Width;
+                text-align: initial;
+            }
+            td:nth-child(2){
+                width:$healthTableColumn2Width;
+                text-align:-webkit-center;
+            }
+            td:nth-child(3){
+                width:$healthTableColumn3Width;
+                text-align:-webkit-center;
+            }
+        }
+    }
+
+    td[class^="REMARKS-"]{
+        @include tableProperty(2px,$remarksTableBorderColor,$remarksTableHeadColor);
+        table{
+            thead{
+                font-family:  $remarksTableHeadFontFamily;
+            }
+            tbody{
+                font-family:  $remarksTableBodyFontFamily;
+            }
+            width:$tableWidth;
+            border-collapse: collapse;
+            tbody>tr{
+                .remarksTableColumn1{
+                    width:10%;
+                    font-size:$smallFont;
+                    @include textAlign(center);
+                    @include border(2px,$remarksTableBorderColor);
+                }
+                .remarksTableColumn2{
+                    font-size:$largeFont;
+                    @include border(2px,$remarksTableBorderColor);
+                }
+            }
+        }
+    }
+
+    td[class^="SIGNATURE-"]{
+        table{
+            width:$fullWidth;
+            margin-top: 20px;
+        }
+    }
+
+}

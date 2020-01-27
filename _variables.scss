@@ -1,0 +1,245 @@
+@import "./_maps.scss";
+//variables
+
+//fontVariables
+    $extraLargeFont:24px;
+    $largeFont:18px;
+    $normalFont:16px;
+    $smallFont:14px;
+    $extraSmallFont:10px;
+    $tableHeaderFont:15px;
+    $tableBodyFont:14px;
+
+//colors
+        
+    //tableColors
+        
+        //termAttendanceTableColors
+        $termAttndceTableHeadFontColor:map-get(map-get($colorPalette, black), base);
+        $termAttndceTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $termAttndceTableHeadColor:map-get(map-get($colorPalette, orange), light);
+        $termAttndceTableBodyColor:  map-get(map-get($colorPalette, gray), lighter);
+        $termAttndceTableBorderColor:  map-get(map-get($colorPalette, black), lighter);
+        $termAttndceTableHeadFontFamily:map-get($fontStyle, serif);
+        $termAttndceTableBodyFontFamily:map-get($fontStyle, timesNewRoman);
+
+        //monthAttendanceTableColors
+        $monthAttdnceTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $monthAttdnceTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $monthAttdnceTableHeadColor: map-get(map-get($colorPalette,green), light);
+        $monthAttdnceTableBodyColor: map-get(map-get($colorPalette, green), lighter);
+        $monthAttdnceTableBorderColor: map-get(map-get($colorPalette, green), lighter);
+        $monthAttdnceTableHeadFontFamily:map-get($fontStyle, serif);
+        $monthAttdnceTableBodyFontFamily:map-get($fontStyle, timesNewRoman);
+
+
+        //scholasticTableColors
+        $schTableHeadFontColor:map-get(map-get($colorPalette, grey),base);
+        $schTableBodyFontColor:map-get(map-get($colorPalette, black), light);
+        $schlTableHeaderColor: map-get(map-get($colorPalette, blue), light);
+        $schlTableBodyColor: map-get(map-get($colorPalette, blue), lighter);
+        $schlTableBorderColor: map-get(map-get($colorPalette,blue), lighter);
+        $schlTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $schlTableBodyFontFamily:map-get($fontStyle,sansSerif);
+
+        //ovrallTotalTableColors
+        $ovrallTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $ovrallTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $ovrallTableHeaderColor:  map-get(map-get($colorPalette, gray), light);
+        $ovrallTableBodyColor:  map-get(map-get($colorPalette, gray), lighter);
+        $ovrallTableBorderColor:  map-get(map-get($colorPalette, black), lighter);
+        $ovrallTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $ovrallTableBodyFontFamily:map-get($fontStyle, sansSerif);
+
+
+        //coscholasticTableColors
+        $coschlTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $coschlTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $coschlTableHeaderColor:  map-get(map-get($colorPalette, gray), light);
+        $coschlTableBodyColor:  map-get(map-get($colorPalette, gray), lighter);
+        $coschlTableBorderColor:  map-get(map-get($colorPalette, black), lighter);
+        $coschlTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $coschlTableBodyFontFamily:map-get($fontStyle, sansSerif);
+
+        //coscholasticIndicatorTableColors
+        $coschlInTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $coschlInTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $coschlInTableHeader:  map-get(map-get($colorPalette, orange), light);
+        $coshlInTableBodyColor:  map-get(map-get($colorPalette, orange), lighter);
+        $coshlInTableBorderColor: map-get(map-get($colorPalette, black), lighter);
+        $coshlInTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $coshlInTableBodyFontFamily:map-get($fontStyle, serif);
+
+        //healthTableColors
+        $healthTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $healthTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $healthTableHeadColor: map-get(map-get($colorPalette, cyan), base);
+        $healthTableBodyColor: map-get(map-get($colorPalette, cyan), lighter);
+        $healthTableBorderColor: map-get(map-get($colorPalette, black), lighter);
+        $healthTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $healthTableBodyFontFamily:map-get($fontStyle, serif);
+
+        //participationTableColors
+        $participationTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $participationTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $participationTableHeadColor: map-get(map-get($colorPalette, yellow), light);
+        $participationTableBodyColor: map-get(map-get($colorPalette, yellow), lighter);
+        $participationTableBorderColor: map-get(map-get($colorPalette, black), lighter);
+        $participationTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $participationTableBodyFontFamily:map-get($fontStyle, serif);
+
+        //achievementTableColors
+        $achieveTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $achieveTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $achieveTableHeadColor: map-get(map-get($colorPalette, red), light);
+        $achieveTableBodyColor: map-get(map-get($colorPalette, red), lighter);
+        $achieveTableBorderColor: map-get(map-get($colorPalette, black), lighter);
+        $achieveTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $achieveTableBodyFontFamily:map-get($fontStyle, serif);
+
+        //participationAndAchievemntTableColors
+        $achievemntAndParticipatnTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $achievemntAndParticipatnTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $achievemntAndParticipatnTableHeadColor: map-get(map-get($colorPalette, orange), light);
+        $achievemntAndParticipatnTableBodyColor: map-get(map-get($colorPalette, orange), lighter);
+        $achievemntAndParticipatnTableBorderColor: map-get(map-get($colorPalette, black), lighter);
+        $achievemntAndParticipatnTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $achievemntAndParticipatnTableBodyFontFamily:map-get($fontStyle, serif);
+        
+
+        //generalRemarksTableColors
+        $remarksTableHeadFontColor: map-get(map-get($colorPalette, black), base);
+        $remarksTableBodyFontColor: map-get(map-get($colorPalette, black), light);
+        $remarksTableHeadColor: map-get(map-get($colorPalette, green), light);
+        $remarksTableBodyColor: map-get(map-get($colorPalette, green), lighter);
+        $remarksTableBorderColor: map-get(map-get($colorPalette, black), lighter);
+        $remarksTableHeadFontFamily:map-get($fontStyle, timesNewRoman);
+        $remarksTableBodyFontFamily:map-get($fontStyle, serif);
+        
+    //GraphColors
+    //semesterGraph
+        $semestrGraphFontColor: map-get(map-get($colorPalette, black), light);
+        $semestrGraphxAxisLineColor: map-get(map-get($colorPalette, black), base);
+        $semestrGraphyAxisLineColor: map-get(map-get($colorPalette, black), base);
+        $semestrGraphBorderColor: map-get(map-get($colorPalette, black), lighter);
+
+        //termColors
+        $semestrTerm1Color: map-get(map-get($colorPalette, graph), base);
+        $semestrTerm2Color: map-get(map-get($colorPalette, graph), lighter);
+        $semestrTerm3Color: map-get(map-get($colorPalette,orange), light);
+        $semestrTerm4Color: map-get(map-get($colorPalette, red), light);
+        
+        //textColors
+        $semestrGraphLableXColor: map-get(map-get($colorPalette, black), light);
+        $semestrGraphLableYColor: map-get(map-get($colorPalette, black), light);
+    //assessmentGraph
+        $asesmntGraphFontColor: map-get(map-get($colorPalette, black), light);
+        $asesmntGraphxAxisLineColor: map-get(map-get($colorPalette, black), base);
+        $asesmntGraphyAxisLineColor: map-get(map-get($colorPalette, black), base);
+        $asesmntGraphBorderColor: map-get(map-get($colorPalette, black), lighter);
+
+        //termColors
+        $asesmntTerm1Color: map-get(map-get($colorPalette, graph), light);
+        $asesmntTerm2Color: map-get(map-get($colorPalette, cyan), lighter);
+        $asesmntTerm3Color: map-get(map-get($colorPalette,orange), light);
+        $asesmntTerm4Color: map-get(map-get($colorPalette, red), light);
+        
+        //yearColors
+        $asesmntYear1Color: map-get(map-get($colorPalette, graph), light);
+        $asesmntYear2Color: map-get(map-get($colorPalette, cyan), lighter);
+        $asesmntYear3Color: map-get(map-get($colorPalette,orange), light);
+        $asesmntYear4Color: map-get(map-get($colorPalette, cyan), lighter);
+        
+
+        //textColors
+        $asesmntGraphLableXColor: map-get(map-get($colorPalette, black), light);
+        $asesmntGraphLableYColor: map-get(map-get($colorPalette, black), light);
+    
+    //SideHeadingColors
+
+        $fontColor: map-get(map-get($colorPalette, black), base);
+
+//styles
+
+    //fontStyles
+        $tableHeadingFontStyle:bold;
+        $italicFontStyle:italic;
+    
+//paddingVariables
+
+    $minPadding:5px;
+    $normalPadding:10px;
+    $tableDivPadding:14px;
+    $maxPadding:20px;
+    $paddingBtwnComponents:15px;
+    
+//heightVariables
+
+    $schoolLogoComponentHeight:75px;
+    $schoolLogoImgHeight:75px;
+    $semesterGraphComponentHeight:400px;
+    $assessmentGraphComponentHeight:400px;
+    $schlIndicatorComponentHeight:20px;
+    
+
+
+//widthVariables
+
+$fullWidth:100%;
+$halfWidth:50%;
+$tableWidth:98%;
+$graphComponentWidth:98%;
+$graphWidth:85%;
+
+    //componentWiseWidths
+
+        //schoolLogoWidths
+            $schoolLogoComponentWidth:70%;
+            $schoolLogoImgWidth:100%;
+
+        //studentDetails
+            $oneColumnTableWidth:100%;
+            $twoColumnTableWidth:50%;
+            $threeColumnTableWidth:33.33%;
+            $stdntOneColumnNameWidth:40%;
+            $stdntOneColumnColonWidth:2%;
+            $stdntOneColumnValueWidth:55%;
+            $stdntTwoColumnNameWidth:40%;
+            $stdntTwoColumnColonWidth:2%;
+            $stdntTwoColumnValueWidth:55%;
+            $stdntThreeColumnNameWidth:40%;
+            $stdntThreeColumnColonWidth:2%;
+            $stdntThreeColumnValueWidth:55%;
+            
+        //termAttendenceWidth
+            $termAttndceComponentWidth:$tableWidth;
+
+        //ovrallTotalWidth
+            $ovrallHeadWidth:80%;
+            $ovrallBodyWidth:10%;
+
+        //coschlIndicatorMarksTableWidth
+            $coschlInHeadWidth:90%;
+            $coschlInBodyWidth:10%;
+
+        //coschlGradingTableWidth
+            $coschlGrdngTableWidth:50%;
+
+        //participationTableWidth
+            $partcptnTableWidth:98%;
+
+        //achievementTableWidth
+            $achvmntTableWidth:98%;
+
+        //participationAndAchievementTableWidth
+            $achievemntAndParticipatnTableWidth:100%;
+
+        //healthDetailsTableWidth
+            $healthTableWidth:98%;
+            $healthTableColumn1Width:80%;
+            $healthTableColumn2Width:10%;            
+            $healthTableColumn3Width:10%;
+        
+        //remarksTableWidth
+            $remarksTableColumn1Width:10%;
+            
